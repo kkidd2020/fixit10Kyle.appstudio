@@ -6,7 +6,7 @@ customerDelete.onshow=function(){
 
 btnAllCustomer.onclick=function(){
     query = "SELECT * FROM customer"
-    req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=kxa57381&pass=" + pw + "&database=kxa57381&query=" + query)
+    req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=krk56243&pass=" + pw + "&database=krk56243&query=" + query)
 
 if (req.status == 200){ 
         results = JSON.parse(req.responseText)
@@ -34,7 +34,7 @@ if (req.status == 200){
 
 customerDelete.onshow=function(){
     query = "Select * FROM customer"
-    req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=kxa57381&pass=" + pw + "&database=kxa57381&query=" + query)
+    req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=krk56243&pass=" + pw + "&database=krk56243&query=" + query)
 
     if (req.status == 200){ //transit worked.
         customerList = JSON.parse(req.responseText)
@@ -64,7 +64,7 @@ btnDel.onclick=function(){
       query = "DELETE FROM customer WHERE name = " + '"' + customerDel + '"'
       
       // replace my netID with yours
-      req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=kxa57381&pass=" + pw + "&database=kxa57381&query=" + query)
+      req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=krk56243&pass=" + pw + "&database=krk56243&query=" + query)
 
       if (req.status == 200) //transit worked.
             if (req.responseText == 500)    // means the insert succeeded
@@ -82,7 +82,7 @@ btnDel.onclick=function(){
 
 btnSeeRemaining.onclick=function(){
   query = "SELECT * FROM customer"
-    req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=kxa57381&pass=" + pw + "&database=kxa57381&query=" + query)
+    req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=krk56243&pass=" + pw + "&database=krk56243&query=" + query)
 
 if (req.status == 200){ 
         postDel = JSON.parse(req.responseText)

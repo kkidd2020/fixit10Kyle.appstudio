@@ -1,7 +1,7 @@
 //on show to populate dropdown
 customerUpdate.onshow=function(){
    query = "SELECT name FROM customer"
-    req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=jjh47572&pass=" + pw + "&database=jjh47572&query=" + query)
+    req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=krk56243&pass=" + pw + "&database=krk56243&query=" + query)
     if (req.status == 200) { //transit worked.
             results = JSON.parse(req.responseText)
             console.log(results)
@@ -30,7 +30,7 @@ btnSubmit.onclick=function(){
     
     query = "UPDATE customer SET name =" + '"' + newName + '"' + " WHERE name = " + '"' + oldName + '"'
     alert(query)
-    req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=jjh47572&pass=" + pw + "&database=jjh47572&query=" + query)
+    req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=krk56243&pass=" + pw + "&database=krk56243&query=" + query)
       
         if (req.status == 200) { //transit worked.
           

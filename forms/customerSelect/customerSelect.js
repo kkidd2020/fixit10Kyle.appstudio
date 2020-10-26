@@ -10,7 +10,7 @@ customerSelect.onshow=function(){
 
 btnCustomer.onclick=function(){
     query = "SELECT * FROM customer"
-    req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=kxa57381&pass=" + pw + "&database=kxa57381&query=" + query)
+    req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=krk56243&pass=" + pw + "&database=krk56243&query=" + query)
 
 if (req.status == 200){ 
         results = JSON.parse(req.responseText)
@@ -39,7 +39,7 @@ customerSelect.onshow=function(){
 btnState.onclick=function(){
     let check = inptState.value
     query = "SELECT * FROM customer WHERE state =" + '"' + check + '"'
-     req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=kxa57381&pass=" + pw + "&database=kxa57381&query=" + query)
+     req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=krk56243&pass=" + pw + "&database=krk56243&query=" + query)
 if (req.status == 200){ 
         resultstate = JSON.parse(req.responseText)
         console.log(resultstate)
